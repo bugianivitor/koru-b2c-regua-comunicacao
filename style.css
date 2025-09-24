@@ -30,9 +30,19 @@ div#retornoCopia {
 }
 input#botaoCopiar {
     display: inline-block;
-    position: relative;
-    left: 890px;
 }
 p#linkMaterial {
+    display: none;
+}
+p#comentarios {
+    display: none;
+}
+p#txtPercentCSAT {
+    display: none;
+}
+p#qtdComentarios {
+    display: none;
+}
+p#qtdAvaliacoes {
     display: none;
 }

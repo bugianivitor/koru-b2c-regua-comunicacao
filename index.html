@@ -16,52 +16,27 @@
                 <option value="vazio"></option>
                 <option value="lembreteAula">Alunos - Lembrete de aula</option>
                 <option value="envioMaterial">Professor - Envio de Material</option>
+                <option value="CSATProfessor">Profesor - Envio de CSAT</option>
             </select></p>
             <p><label for="periodo">Qual é o período do dia? </label> <select name="periodo" id="periodo">
-                <option value="manha" onclick="periodoDia()">Manhã</option>
-                <option value="tarde" onclick="periodoDia()">Tarde</option>
-                <option value="noite" onclick="periodoDia()">Noite</option>
+                <option value="manha">Manhã</option>
+                <option value="tarde">Tarde</option>
+                <option value="noite">Noite</option>
             </select></p>
             <p><label for="turma">Para qual turma é a comunicação? </label><select name="turma" id="turma">
                 <option value="ARH5">ARH 5</option>
             </select></p>
-            <p><label for="aula">Qual é o tema da aula? </label> <select name="aula" id="aula">
-                <option value="diversidadeEInclusao">Diversidade e Inclusão</option>
-                <option value="saudeMentalEIntegral">Saúde Mental e Integral</option>
-                <option value='mentoriaAberta'>Mentoria aberta</option>
-                <option value='businessPartner'>Business Partner </option>
-                <option value='businessAcumen'>Business Acumen </option>
-                <option value='operacaoDeRH'>Estrutura e modelos de operação de RH</option>
-                <option value='orcamentoEmRH'>Orçamento em RH</option>
-                <option value='peopleTechEAnalytics'>People Tech e Analytics</option>
-                <option value='atracaoDeTalentosEmployerBranding'>Atração de talentos, Employer branding e EVP</option>
-                <option value='selecaoDeTalentos'>Seleção de talentos</option>
-                <option value='rewardsEIncentivos'>Rewards e incentivos</option>
-                <option value='organizacoesQueAprendem'>Organizações que aprendem</option>
-                <option value='formacaoDeLideranca'>Formação de liderança</option>
-                <option value='performanceECarreira'>Performance e carreira + Pipeline e Sucessão</option>
-                <option value='programasDeTalentos'>Programas de talentos</option>
+            <p><label for="aulas">Qual é o tema da aula? </label> <select name="aulas" id="aulas">
             </select></p>
             <p><label for="professor">Qual é a pessoa formadora? </label> <select name="professor" id="professor">
-                <option value="anaPaula">Ana Paula</option>
-                <option value="joseNetto">José Netto</option>
-                <option value='camilaGirundi'>Camila Girundi Guimaraes Alves</option>
-                <option value='fernandaLoro'>Fernanda Loro</option>
-                <option value='deborahMedeiros'>Deborah Medeiros Kaufmann</option>
-                <option value='danielKobata'>Daniel Kobata</option>
-                <option value='priscilaCosta'>Priscila Costa</option>
-                <option value='robertaSerafim'>Roberta Cristiane Serafim</option>
-                <option value='stephanieYasmine'>Stephanie Yasmine Soares Lopes Torres</option>
-                <option value='matheusViniciuis'>Matheus Vinicius Ramalho Fonseca</option>
-                <option value='gabrielRaposo'>Gabriel Raposo</option>
-                <option value='mariaOttilia'>Maria Ottilia Norcio Duarte</option>
-                <option value='gianpieroSperati'>Gianpiero Sperati</option>
-                <option value='isadoraBerardo'>Isadora Berardo Tumulo Gabriel</option>
-                <option value='vanessaTogniolli'>Vanessa Togniolli</option>
             </select></p>
             <p id="linkMaterial"><label for="link">Coloque o link aqui: </label><input type="text" name="link" id="link"></p>
-            <p> <input type="button" value="Gerar mensagem" onclick="gerarMensagem()">
-                <input type="button" value="Copiar" id="botaoCopiar" onclick="copiarMensagem()"></p>
+            <p id="txtPercentCSAT"><label for="txtPercentCSAT">Percentual do CSAT: </label><input type="number" name="txtPercentCSAT" id="txtPercentCSAT"></p>
+            <p id="qtdAvaliacoes"><label for="qtdAvaliacoes">Quantidade de avaliações: </label><input type="number" name="qtdAvaliacoes" id="qtdAvaliacoes"></p>
+            <p id="qtdComentarios"><label for="qtdComentarios">Quantidade de comentários: </label><input type="number" name="qtdComentarios" id="qtdComentarios"></p>
+            <p id="comentarios"><label for="comentarios">Comentários </label><textarea name="comentarios" id="comentarios" cols="48"></textarea></p>
+            <p> <input id="botaoGerar" type="button" value="Gerar mensagem">
+                <input type="button" value="Copiar" id="botaoCopiar"><label for="botaoCopiar"></label></p>
                 <div id="retornoCopia"></div>
         </div>
         <div id="resposta"></div>
